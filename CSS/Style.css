@@ -1,0 +1,148 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background: url("https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1529501913327&di=79c6785ba061f59c2d6584a198c1eddb&imgtype=jpg&src=http%3A%2F%2Fimg1.imgtn.bdimg.com%2Fit%2Fu%3D918945956%2C3921577549%26fm%3D214%26gp%3D0.jpg");
+    background-size: cover;
+}
+
+a {
+    /*文字颜色*/
+    color: black;
+}
+
+#header {
+    /*右对齐*/
+    text-align: right;
+    /*上下间距*/
+    margin: 10px;
+
+    background-color: rgba(0,0,0,0.2);
+    height: 42px;
+    line-height: 42px;
+}
+
+#header a {
+    /*加粗*/
+    font-weight: bolder;
+    /*设置文字大小*/
+    font-size: 14px;
+    /*右间距*/
+    margin-right: 10px;
+    color: white;
+}
+
+#header a.no-weight {
+    /*字体加粗*/
+    font-weight:normal;
+}
+
+#header a.more {
+    /*背景颜色*/
+    background-color: #3385ff;
+    /*文字颜色*/
+    color: white;
+    /*设置内边距*/
+    padding: 4px;
+    /*去除下划线*/
+    text-decoration: none;
+}
+
+#content {
+
+}
+
+#content .top-content {
+    /*居中*/
+    text-align: center;
+}
+
+/*拿到img标签*/
+#content .top-content img {
+    /*设置大小*/
+    width: 270px;
+    height: 129px;
+    margin-bottom: 20px;
+
+}
+
+/*拿到mid content*/
+#content .mid-content {
+    width:600px;
+    height: 40px;
+    /*间距*/
+    margin:0 auto 30px;
+}
+/*拿到input标签*/
+#content .mid-content input {
+    width:500px;
+    height:100%;
+    /*盒子往里走*/
+    box-sizing: border-box;
+    /*左边距*/
+    padding-left: 10px;
+    /*字体*/
+    font-size: 16px;
+}
+
+/*拿到a标签*/
+#content .mid-content a{
+    /*改为行内块级标签*/
+    display: inline-block;
+    width: 100px;
+    height: 40px;;
+    /*脱离标准流 浮动*/
+    float: right;
+    /*内容居中*/
+    text-align: center;
+    /*水平居中需要设置行高*/
+    line-height: 40px;
+    background-color: lightgray;
+}
+
+/*伪类*/
+#content .mid-content input:focus {
+    /*去除外边线*/
+    outline: none;
+    /*自定义外边线颜色*/
+    border: 1px solid #3385ff;
+}
+
+.quick {
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+
+.quick img {
+    width: 100px;
+    height: 100px;
+    /*图片之间的间距*/
+    margin:0 5px;
+}
+
+.quick img:hover {
+opacity: 0.3;
+}
+
+#footer {
+    width: 100%;
+    text-align: center;
+    /*固定位置*/
+    position: fixed;
+    bottom:0px;
+    color: white;
+    font-size: 14px;
+}
+
+.footer-bottom {
+    margin-bottom:30px;;
+}
+
+#footer a{
+    margin:0 5px;
+    color: white;
+
+}
